@@ -65,6 +65,10 @@ const NavigationDesktop = () => {
       }}
     >
       { config.chain.isTestnet && <IconSvg name="testnet" h="14px" w="49px" color="red.400" position="absolute" pl={ 3 } top="34px"/> }
+      <IconSvg name="beta" h="10px" w="39px" color="blue.400" position="absolute"
+        top={{ lg: isExpanded ? '76px' : '7px', xl: isCollapsed ? '7px' : '76px' }}
+        right={{ lg: isExpanded ? '65px' : '23px', xl: isCollapsed ? '23px' : '65px' }}
+        justifyContent="flex-start"/>
       <Box
         as="header"
         display="flex"
